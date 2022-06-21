@@ -1,0 +1,10 @@
+---
+title: "Test report"
+output: html_document
+params:
+  dataset: NULL
+---
+```{r mpg_vs_gear}
+params$dataset[[1]] %>%
+ggplot(aes(mpg,gear)) + geom_point() + geom_smooth()
+```
